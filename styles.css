@@ -1,0 +1,102 @@
+
+body{
+    background-image: linear-gradient(to bottom, rgb(226, 226, 226), rgb(238, 255, 236));
+    background-color: rgb(238, 255, 236);
+}
+
+#flex-container{
+    background-color: white;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+h1 a:visited {
+    color: black;
+}
+
+h1 a:hover {
+    color: rgb(87, 87, 87);
+}
+
+
+ul{
+    list-style: none;
+    padding: 0 40px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+p a {
+    font-size: 10px;
+    color: #00cc00;
+}
+
+p a:hover{
+    color: #328332;
+}
+
+em{
+    font-weight: bold;
+}
+
+.images-container{
+    text-align: center;
+}
+
+img{
+    width: 40%;
+    height: 20%; 
+}
+
+footer {
+    font-family: 'Open Sans';
+    font-size: 10px;
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+footer a{
+    color: rgb(100, 100, 100);
+}
+
+
+@media only screen and (max-width: 1000px) {
+        #flex-container{
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+}
