@@ -1,6 +1,7 @@
 
 body{
     background-image: linear-gradient(to bottom, rgb(226, 226, 226), rgb(238, 255, 236));
+    background-repeat: no-repeat;
     background-color: rgb(238, 255, 236);
 }
 
@@ -8,11 +9,13 @@ body{
     background-color: white;
     margin: 10px auto;
     width: 60%;
+    box-shadow: 3px 3px rgb(248, 248, 248);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    
 }
 
 h1{
@@ -28,6 +31,11 @@ h2{
     font-family: 'Varela Round', sans-serif;
     margin: 0;
     padding: 10px 0;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -48,6 +56,32 @@ h1 a:hover {
 ul{
     list-style: none;
     padding: 0 40px;
+    
+}
+
+li{
+    padding: 40px, 0px;
+}
+
+.issue-columns{
+    display: flex;
+}
+
+.issue-columns div{
+    
+}
+
+.column1{
+    flex: 1;
+    text-align: justify;
+    padding: 10px;
+}
+
+.column2{
+    flex: 1;
+    text-align: justify;
+    padding: 10px;
+    
 }
 
 p{
@@ -68,14 +102,28 @@ em{
     font-weight: bold;
 }
 
-.images-container{
+.areas{
     text-align: center;
 }
 
-img{
-    width: 40%;
-    height: 20%; 
+.areas img {
+    width: 100%;
+    height: 100%;
 }
+
+.images-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.images-container img{
+    width: 90%;
+    height: 90%;
+}
+
+
 
 footer {
     font-family: 'Open Sans';
