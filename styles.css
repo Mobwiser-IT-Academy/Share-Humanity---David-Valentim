@@ -1,6 +1,6 @@
 
 body{
-    background-image: linear-gradient(to bottom, rgb(226, 226, 226), rgb(238, 255, 236));
+    background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(238, 255, 236));
     background-repeat: no-repeat;
     background-color: rgb(238, 255, 236);
 }
@@ -18,6 +18,8 @@ body{
     
 }
 
+
+
 h1{
     font-family: 'Varela Round', sans-serif;
     font-size: 45px;
@@ -28,6 +30,7 @@ h1{
 }
 
 h2{
+    text-align: left;
     font-family: 'Varela Round', sans-serif;
     margin: 0;
     padding: 10px 0;
@@ -49,39 +52,36 @@ h1 a:visited {
 }
 
 h1 a:hover {
-    color: rgb(87, 87, 87);
+    color: rgb(126, 126, 126);
 }
-
 
 ul{
     list-style: none;
-    padding: 0 40px;
-    
+    padding: 0;
 }
 
 li{
-    padding: 40px, 0px;
+    padding: 0 20px;
+}
+
+.issue-container{
+    padding: 20px;
 }
 
 .issue-columns{
     display: flex;
 }
 
-.issue-columns div{
-    
-}
 
 .column1{
     flex: 1;
     text-align: justify;
-    padding: 10px;
+
 }
 
 .column2{
     flex: 1;
     text-align: justify;
-    padding: 10px;
-    
 }
 
 p{
@@ -100,6 +100,11 @@ p a:hover{
 
 em{
     font-weight: bold;
+}
+
+hr {
+    border: 2px solid rgb(248, 248, 248);
+    width: 80%;  
 }
 
 .areas{
@@ -146,5 +151,17 @@ footer a{
 
         h1{
             text-align: center;
+            font-size: 35px;
         }
+
+        .issue-columns{
+            flex-direction: column;
+        }
+
+        .column2{
+            display: flex;
+            align-items: center;
+        }
+
+        
 }
