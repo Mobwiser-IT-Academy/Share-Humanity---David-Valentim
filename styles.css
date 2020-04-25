@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(238, 255, 236));
     background-repeat: no-repeat;
@@ -10,7 +14,7 @@ body{
     margin: 10px auto;
     width: 60%;
     box-shadow: 3px 3px rgb(248, 248, 248);
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +132,9 @@ hr {
     height: 90%;
 }
 
-
+#backToTop{
+    font-family: OpenSans, sans-serif;
+}
 
 footer {
     font-family: 'Open Sans';
@@ -165,3 +171,4 @@ footer a{
 
         
 }
+
