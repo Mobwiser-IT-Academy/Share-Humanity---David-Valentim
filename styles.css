@@ -7,6 +7,7 @@ body{
     background-image: linear-gradient(to bottom, rgb(245, 245, 245), rgb(238, 255, 236));
     background-repeat: no-repeat;
     background-color: rgb(238, 255, 236);
+    
 }
 
 #flex-container{
@@ -43,7 +44,12 @@ h2{
 h3{
     margin: 0;
     padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1em;
+    display: inline-block;
 }
+
+
 
 a {
     text-decoration: none;
@@ -113,8 +119,14 @@ em{
 
 hr {
     border: 2px solid rgb(248, 248, 248);
-    width: 80%;  
+    width: 80%;
 }
+
+.number-people-affected{
+    text-decoration: underline;
+    display:inline-block;
+}
+
 
 .areas{
     text-align: center;
@@ -177,6 +189,10 @@ span{
     font-size: 24px;
 }
 
+.inline{
+    
+}
+
 footer {
     font-family: 'Open Sans';
     font-size: 10px;
@@ -186,6 +202,10 @@ footer {
 
 footer a{
     color: rgb(100, 100, 100);
+}
+
+#myInput{
+    margin-left: 70%;
 }
 
 
@@ -209,7 +229,11 @@ footer a{
             display: flex;
             align-items: center;
         }
-
+        #myInput{
+            width: 90px;
+        }
         
 }
+
+
 
