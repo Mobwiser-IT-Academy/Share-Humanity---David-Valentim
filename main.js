@@ -14,9 +14,7 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s`;
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
       }
     });
 
@@ -30,12 +28,12 @@ navSlide();
 
 var issues = [
   {
-    title: "1. Poverty",
+    title: "1. No Poverty",
     info: `     More than 700 million people, or 10% of the world population, still live in extreme poverty and are struggling to fulfill the most basic needs like health, education, and access to water and sanitation, to name a few. The majority of people living on less than $1.90 a day live in sub-Saharan Africa. Worldwide, the poverty rate in rural areas is 17.2 per cent — more than three times higher than in urban areas.\n\n    Having a job does not guarantee a decent living. In fact, 8 per cent of employed workers and their families worldwide lived in extreme poverty in 2018. Poverty affects children disproportionately. One out of five children live in extreme poverty. Ensuring social protection for all children and other vulnerable groups is critical to reduce poverty.\n\n    Poverty has many dimensions, but its causes include unemployment, social exclusion, and high vulnerability of certain populations to disasters, diseases and other phenomena which prevent them from being productive. Growing inequality is detrimental to economic growth and undermines social cohesion, increasing political and social tensions and, in some circumstances, driving instability and conflicts.`,
   },
 
   {
-    title: "2. Hunger",
+    title: "2. Zero Hunger",
     info: `    It is time to rethink how we grow, share and consume our food. If done right, agriculture, forestry and fisheries can provide nutritious food for all and generate decent incomes, while supporting people-centered rural development and protecting the environment.
                             
     Right now, our soils, freshwater, oceans, forests and biodiversity are being rapidly degraded. Climate change is putting even more pressure on the resources we depend on, increasing risks associated with disasters, such as droughts and floods. Many rural women and men can no longer make ends meet on their land, forcing them to migrate to cities in search of opportunities. Poor food security is also causing millions of children to be stunted, or too short for the ages, due to severe malnutrition.
@@ -44,7 +42,7 @@ var issues = [
   },
 
   {
-    title: "3. Health",
+    title: "3. Good Health and Well-Being",
     info: `    Ensuring healthy lives and promoting the well-being at all ages is essential to sustainable development.
                             
     Significant strides have been made in increasing life expectancy and reducing some of the common killers associated with child and maternal mortality, but working towards achieving the target of less than 70 maternal deaths per 100,000 live births by 2030 would require improvements in skilled delivery care.
@@ -55,7 +53,7 @@ var issues = [
   },
 
   {
-    title: "4. Education",
+    title: "4. Quality Education",
     info: `    Obtaining a quality education is the foundation to creating sustainable development. In addition to improving quality of life, access to inclusive education can help equip locals with the tools required to develop innovative solutions to the world’s greatest problems.
                             
     Over 265 million children are currently out of school and 22% of them are of primary school age. Additionally, even the children who are attending schools are lacking basic skills in reading and math. In the past decade, major progress has been made towards increasing access to education at all levels and increasing enrollment rates in schools particularly for women and girls. Basic literacy skills have improved tremendously, yet bolder efforts are needed to make even greater strides for achieving universal education goals. For example, the world has achieved equality in primary education between girls and boys, but few countries have achieved that target at all levels of education.
@@ -64,12 +62,18 @@ var issues = [
   },
 
   {
-    title: "5. Water",
-    info: `    Clean, accessible water for all is an essential part of the world we want to live in and there is sufficient fresh water on the planet to achieve this. However, due to bad economics or poor infrastructure, millions of people including children die every year from diseases associated with inadequate water supply, sanitation and hygiene.
+    title: "5. Gender Equality",
+    info: `    Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prosperous and sustainable world. 
 
-    Water scarcity, poor water quality and inadequate sanitation negatively impact food security, livelihood choices and educational opportunities for poor families across the world. At the current time, more than 2 billion people are living with the risk of reduced access to freshwater resources and by 2050, at least one in four people is likely to live in a country affected by chronic or recurring shortages of fresh water. Drought in specific afflicts some of the world’s poorest countries, worsening hunger and malnutrition. Fortunately, there has been great progress made in the past decade regarding drinking sources and sanitation, whereby over 90% of the world’s population now has access to improved sources of drinking water.
+    There has been progress over the last decades: More girls are going to school, fewer girls are forced into early marriage, more women are serving in parliament and positions of leadership, and laws are being reformed to advance gender equality. 
     
-    To improve sanitation and access to drinking water, there needs to be increased investment in management of freshwater ecosystems and sanitation facilities on a local level in several developing countries within Sub-Saharan Africa, Central Asia, Southern Asia, Eastern Asia and South-Eastern Asia.`,
+    Despite these gains, many challenges remain: discriminatory laws and social norms remain pervasive, women continue to be underrepresented at all levels of political leadership, and 1 in 5 women and girls between the ages of 15 and 49 report experiencing physical or sexual violence by an intimate partner within a 12-month period.
+    
+    The effects of the COVID-19 pandemic could reverse the limited progress that has been made on gender equality and women’s rights.  The coronavirus outbreak exacerbates existing inequalities for women and girls across every sphere – from health and the economy, to security and social protection. 
+    
+    Women play a disproportionate role in responding to the virus, including as frontline healthcare workers and carers at home. Women’s unpaid care work has increased significantly as a result of school closures and the increased needs of older people. Women are also harder hit by the economic impacts of COVID-19, as they disproportionately work in insecure labour markets. Nearly 60 per cent of women work in the informal economy, which puts them at greater risk of falling into poverty. 
+    
+    The pandemic has also led to a steep increase in violence against women and girls. With lockdown measures in place, many women are trapped at home with their abusers, struggling to access services that are suffering from cuts and restrictions. Emerging data shows that, since the outbreak of the pandemic, violence against women and girls – and particularly domestic violence – has intensified.`,
   },
 ];
 
