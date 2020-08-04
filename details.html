@@ -1,193 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Humanitarian Issues</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="centered">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="./images-files/logo-share-humanityv2.png"
+              alt="Share Humanity Logo"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Our Goals</a>
+          </li>
+          <li>
+            <a href="#">Work</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="flex-container">
-        
-        <a href="index.html" id="title"><h1 >Global Humanitarian Issues</h1></a>
-        
-        <input type="text" id="myInput" onkeyup="filterFunctionDetails()" placeholder="Search...">
+    <div class="flex-container">
+      <a href="index.html" id="title"><h1>Global Humanitarian Issues</h1></a>
 
-            <div class="issue-container" id="issue-1">
-        
-                <h2 id="first-issue"></h2>
-                <div class="inline">
-                    <h3 class="inline">Number of people affected:</h3>
-                    <p id="people-affected-1" class="number-people-affected"></p>
-                </div>
-                
-                <div class="issue-columns">
-                    <div class="column1">    
-                        <p class="issue-info" id="first-issue-info"></p> 
-                    </div> 
-                    <div class="column2">   
-                        <p class="areas">
-                            <b>Areas most affected:</b>
-                            <br>
-                            <a href="images-files/worldmap-poverty.jpg"><img src="images-files/worldmap-poverty.jpg" alt="World Map Poverty Rate"></a>
-                        </p>
-                        <div class="images-container">    
-                            <a href="images-files/poverty-pdf-1.pdf" target="_blank"><img src="images-files/poverty-img-1.png" alt="" width="400" height="250"></a>
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="filterFunction()"
+        placeholder="Search..."
+      />
 
-                            <a href="images-files/poverty-pdf-2.pdf" target="_blank"><img src="images-files/poverty-img-2.png" alt="" width="400" height="250"></a>  
-                        </div>   
-                    </div>
-                </div>     
-                <hr>
+      <div class="issue-container" id="issue-1">
+        <h2 id="first-issue">First Issue</h2>
+        <div class="inline">
+          <h3 class="inline">Number of people affected:</h3>
+          <p id="people-affected-1" class="number-people-affected"></p>
+        </div>
+
+        <div class="issue-columns">
+          <div class="column1">
+            <p class="issue-info" id="first-issue-info"></p>
+          </div>
+          <div class="column2">
+            <p class="areas">
+              <b>Areas most affected:</b>
+              <br />
+              <a href="images-files/worldmap-poverty.jpg"
+                ><img
+                  src="images-files/worldmap-poverty.jpg"
+                  alt="World Map Poverty Rate"
+              /></a>
+            </p>
+            <div class="images-container">
+              <a href="images-files/poverty-pdf-1.pdf" target="_blank"
+                ><img
+                  src="images-files/poverty-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+
+              <a href="images-files/poverty-pdf-2.pdf" target="_blank"
+                ><img
+                  src="images-files/poverty-img-2.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
             </div>
-            
+          </div>
+        </div>
+        <hr />
+      </div>
 
+      <div class="issue-container" id="issue-2">
+        <h2 id="second-issue">Second Issue</h2>
+        <h3>Number of people affected:</h3>
+        <p id="people-affected-2" class="number-people-affected"></p>
+        <div class="issue-columns">
+          <div class="column1">
+            <p class="issue-info" id="second-issue-info"></p>
+          </div>
 
-            <div class="issue-container" id="issue-2">
-                
-                <h2 id="second-issue"></h2>
-                <h3 class="inline">Number of people affected:</h3>
-                <p id="people-affected-2" class="number-people-affected"></p>
-                <div class="issue-columns">   
-                    <div class="column1">
-                        <p class="issue-info" id="second-issue-info">
-                            
-                        </p>
-                    </div>
-                
-                    <div class="column2">    
-                        <p class="areas">
-                            <b>Areas most affected:</b>
-                            <br>
-                            <a href="images-files/worldmap-hunger.jpg"><img src="images-files/worldmap-hunger.jpg" alt="World Map Hunger Rate"></a>
-                         </p>    
-                        <div class="images-container"> 
-                            <a href="images-files/hunger-pdf-1.pdf" target="_blank"><img src="images-files/hunger-img-1.png" alt="" width="400" height="250"></a>
+          <div class="column2">
+            <p class="areas">
+              <b>Areas most affected:</b>
+              <br />
+              <a href="images-files/worldmap-hunger.jpg"
+                ><img
+                  src="images-files/worldmap-hunger.jpg"
+                  alt="World Map Hunger Rate"
+              /></a>
+            </p>
+            <div class="images-container">
+              <a href="images-files/hunger-pdf-1.pdf" target="_blank"
+                ><img
+                  src="images-files/hunger-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
 
-                            <a href="images-files/hunger-pdf-2.pdf" target="_blank"><img src="images-files/hunger-img-2.png" alt="" width="400" height="250"></a>
-                        </div>
-                    </div>
-                </div>    
-                <hr>
+              <a href="images-files/hunger-pdf-2.pdf" target="_blank"
+                ><img
+                  src="images-files/hunger-img-2.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
             </div>
-           
+          </div>
+        </div>
+        <hr />
+      </div>
 
+      <div class="issue-container" id="issue-3">
+        <h2 id="third-issue">Third Issue</h2>
+        <h3>Number of people affected:</h3>
+        <p id="people-affected-3" class="number-people-affected"></p>
+        <div class="issue-columns">
+          <div class="column1">
+            <p class="issue-info" id="third-issue-info"></p>
+          </div>
 
-            <div class="issue-container" id="issue-3">
-                <h2 id="third-issue"></h2>
-                <h3 class="inline">Number of people affected:</h3>
-                <p id="people-affected-3" class="number-people-affected"></p>
-                <div class="issue-columns">    
-                    <div class="column1">    
-                        <p class="issue-info" id="third-issue-info">
-                            
-                        </p>
-                    </div> 
-                    
-                    <div class="column2">    
-                        <div class="areas">   
-                            <p>
-                                <b>Areas most affected:</b>
-                                <br>
-                                <a href="images-files/worldmap-health.jpg"><img src="images-files/worldmap-health.jpg" alt="World Map Child Mortality Rate"></a>
-                            </p> 
-                        </div> 
-                        
-                        <div class="images-container">
-                            <a href="images-files/health-pdf-1.pdf" target="_blank"><img src="images-files/health-img-1.png" alt="" width="400" height="250"></a>
-
-                            <a href="images-files/health-pdf-2.pdf" target="_blank"><img src="images-files/health-img-2.png" alt="" width="400" height="250"></a>
-                        </div>     
-                    </div>
-                </div>
-                <hr>
-            </div>    
-
-
-
-            <div class="issue-container" id="issue-4">
-                
-                <h2 id="fourth-issue"></h2>
-                <h3 class="inline">Number of people affected:</h3>
-                <p id="people-affected-4" class="number-people-affected"></p>
-                <div class="issue-columns">
-                    <div class="column1">
-                        <p class="issue-info" id="fourth-issue-info">
-                            
-                        </p>
-                    </div>
-                        
-                    <div class="column2">
-                        <div class="areas">    
-                            <p>
-                                <b>Areas most affected:</b>
-                                <br>
-                                <a href="images-files/worldmap-education.jpg"><img src="images-files/worldmap-education.jpg" alt=""></a>
-                            </p>
-                        </div>
-                        <div class="images-container">
-                            <a href="images-files/education-pdf-1.pdf" target="_blank"><img src="images-files/education-img-1.png" alt="" width="400" height="250"></a>
-
-                            <a href="images-files/education-pdf-2.pdf" target="_blank"><img src="images-files/education-img-2.png" alt="" width="400" height="250"></a>
-                        </div>
-                    </div>
-                </div>            
-                <hr>
-            </div>
-
-
-
-            <div class="issue-container" id="issue-5">
-                <h2 id="fifth-issue"></h2>
-                <h3 class="inline">Number of people affected:</h3>
-                <p id="people-affected-5" class="number-people-affected"></p>
-                <div class="issue-columns">
-                    <div class="column1">                
-                        <p class="issue-info" id="fifth-issue-info">
-                            
-                        </p>
-                    </div>    
-                    
-                    <div class="column2">
-                        <div class="areas">    
-                            <p>
-                                <b>Areas most affected:</b>
-                                <br>
-                                <a href="images-files/worldmap-water.jpg"><img src="images-files/worldmap-water.jpg" alt="World Map Share of Population with access to improved drinking water, 2015"></a>
-                            </p>
-                        </div>
-                        <div class="images-container">
-                            <a href="images-files/water-pdf-1.pdf" target="_blank"><img src="images-files/water-img-1.png" alt="" width="400" height="250"></a>
-
-                            <a href="images-files/water-pdf-2.pdf" target="_blank"><img src="images-files/water-img-2.png" alt="" width="400" height="250"></a>
-                        </div>
-                    </div>
-                </div>       
+          <div class="column2">
+            <div class="areas">
+              <p>
+                <b>Areas most affected:</b>
+                <br />
+                <a href="images-files/worldmap-health.jpg"
+                  ><img
+                    src="images-files/worldmap-health.jpg"
+                    alt="World Map Child Mortality Rate"
+                /></a>
+              </p>
             </div>
 
-        <div id="backToTopContainer">
-            <div id="backToTop">
-                <a href="#title">  
-                Back to Top  
-                <span>
-                 <i class="fas fa-arrow-up"></i>
-                </span>    
-                </a>
-            </div>    
-    
-        </div>    
+            <div class="images-container">
+              <a href="images-files/health-pdf-1.pdf" target="_blank"
+                ><img
+                  src="images-files/health-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+
+              <a href="images-files/health-pdf-2.pdf" target="_blank"
+                ><img
+                  src="images-files/health-img-2.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="issue-container" id="issue-4">
+        <h2 id="fourth-issue">Fourth Issue</h2>
+        <h3>Number of people affected:</h3>
+        <p id="people-affected-4" class="number-people-affected"></p>
+        <div class="issue-columns">
+          <div class="column1">
+            <p class="issue-info" id="fourth-issue-info"></p>
+          </div>
+
+          <div class="column2">
+            <div class="areas">
+              <p>
+                <b>Areas most affected:</b>
+                <br />
+                <a href="images-files/worldmap-education.jpg"
+                  ><img src="images-files/worldmap-education.jpg" alt=""
+                /></a>
+              </p>
+            </div>
+            <div class="images-container">
+              <a href="images-files/education-pdf-1.pdf" target="_blank"
+                ><img
+                  src="images-files/education-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+
+              <a href="images-files/education-pdf-2.pdf" target="_blank"
+                ><img
+                  src="images-files/education-img-2.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="issue-container" id="issue-5">
+        <h2 id="fifth-issue">Fifth Issue</h2>
+        <h3>Number of people affected:</h3>
+        <p id="people-affected-5" class="number-people-affected"></p>
+        <div class="issue-columns">
+          <div class="column1">
+            <p class="issue-info" id="fifth-issue-info"></p>
+          </div>
+
+          <div class="column2">
+            <div class="areas">
+              <p>
+                <b>Areas most affected:</b>
+                <br />
+                <a href="images-files/worldmap-water.jpg"
+                  ><img
+                    src="images-files/worldmap-water.jpg"
+                    alt="World Map Share of Population with access to improved drinking water, 2015"
+                /></a>
+              </p>
+            </div>
+            <div class="images-container">
+              <a href="images-files/water-pdf-1.pdf" target="_blank"
+                ><img
+                  src="images-files/water-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+
+              <a href="images-files/water-pdf-2.pdf" target="_blank"
+                ><img
+                  src="images-files/water-img-2.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="backToTopContainer">
+        <div id="backToTop">
+          <a href="#title">
+            Back to Top
+            <span>
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
-        
-        
-    
+
     <footer>
-        Sources: <a href="https://www.un.org/sustainabledevelopment/">https://www.un.org/sustainabledevelopment/</a>
-        <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
+      Sources:
+      <a href="https://www.un.org/sustainabledevelopment/"
+        >https://www.un.org/sustainabledevelopment/</a
+      >
+      <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
     </footer>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

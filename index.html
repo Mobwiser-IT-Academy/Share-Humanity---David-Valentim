@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Humanitarian Issues</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
-
-    <script src="main.js"></script>
-
-</head>
-<body>
-    <div id="flex-container">
-        
-        <h1><a href="index.html">Global Humanitarian Issues</a></h1>
-
-        <input type="text" id="myInput" onkeyup="filterFunction()" placeholder="Search..."> 
-
-        <ul id="myUL">
-            <li>
-                <h2 class="item">1. Poverty</h2>
-                <p>    
-                    <em>700+ million</em> people living in extreme poverty <a href="details.html#first-issue">View more...</a>
-                </p>
-            </li>
-
-            <li>
-                <h2 class="item">2. Hunger</h2>
-                <p>
-                    <em>800+ million</em> people suffer from malnutrition <a href="details.html#second-issue">View more...</a>
-                </p>
-            </li>
-
-            <li>
-                <h2 class="item">3. Health</h2>
-                <p>
-                    <em>5+ million</em> children die every year before reaching age 5 <a href="details.html#third-issue">View more...</a>
-                </p>
-            </li>
-
-
-            <li>
-                <h2 class="item">4. Education</h2>
-                <p>
-                    <em>265+ million</em> children have no access to quality education <a href="details.html#fourth-issue">View more...</a>
-                </p>
-            </li>
-
-            <li>
-                <h2 class="item">5. Water</h2>
-                <p>
-                    <em>785+ million</em> people without access to basic drinking water <a href="details.html#fifth-issue">View more...</a>
-                </p>
-            </li>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="centered">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="./images-files/logo-share-humanityv2.png"
+              width="12"
+              alt="Share Humanity Logo"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Our Goals</a>
+          </li>
+          <li>
+            <a href="#">Work</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
         </ul>
-        
-        
-    </div>
-    <footer>
-        Sources: <a href="https://www.un.org/sustainabledevelopment/">https://www.un.org/sustainabledevelopment/</a>
-        <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
-    </footer>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
 
-</body>
+    <div class="flex-container">
+      <div class="hero"></div>
+    </div>
+
+    <div class="flex-container">
+      <h2><a href="index.html" id="title">Global Humanitarian Issues</a></h2>
+
+      <ul id="myUL">
+        <li>
+          <h2 class="item">1. Poverty</h2>
+          <p>
+            <em>700+ million</em> people living in extreme poverty
+            <a href="details.html#first-issue">View more...</a>
+          </p>
+        </li>
+
+        <li>
+          <h2 class="item">2. Hunger</h2>
+          <p>
+            <em>800+ million</em> people suffer from malnutrition
+            <a href="details.html#second-issue">View more...</a>
+          </p>
+        </li>
+
+        <li>
+          <h2 class="item">3. Health</h2>
+          <p>
+            <em>5+ million</em> children die every year before reaching age 5
+            <a href="details.html#third-issue">View more...</a>
+          </p>
+        </li>
+
+        <li>
+          <h2 class="item">4. Education</h2>
+          <p>
+            <em>265+ million</em> children have no access to quality education
+            <a href="details.html#fourth-issue">View more...</a>
+          </p>
+        </li>
+
+        <li>
+          <h2 class="item">5. Water</h2>
+          <p>
+            <em>785+ million</em> people without access to basic drinking water
+            <a href="details.html#fifth-issue">View more...</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="flex-container"></div>
+
+    <footer>
+      Sources:
+      <a href="https://www.un.org/sustainabledevelopment/"
+        >https://www.un.org/sustainabledevelopment/</a
+      >
+      <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
+    </footer>
+  </body>
 </html>
