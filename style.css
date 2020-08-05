@@ -48,7 +48,7 @@ header {
   letter-spacing: 3px;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
   color: #328332;
 }
 
@@ -147,6 +147,7 @@ body {
 }
 
 .flex-container {
+  transition: ease-in;
   background-color: white;
   margin: 3px auto;
   width: 60%;
@@ -169,13 +170,9 @@ body {
   position: relative;
 }
 
-.goals{
-  display: inline;
-}
-
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 45px;
+  font-size: 4em;
   color: rgb(59, 59, 59);
   font-weight: bold;
   text-decoration: none;
@@ -184,7 +181,7 @@ h1 {
 
 h2 {
   color: rgb(59, 59, 59);
-  font-size: 2em;
+  font-size: 3em;
   text-align: left;
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -201,15 +198,15 @@ h3 {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(59, 59, 59);
 }
 
 h1 a:visited {
-  color: black;
+  color: rgb(59, 59, 59);
 }
 
 h1 a:hover {
-  color: rgb(126, 126, 126);
+  color: #328332;
 }
 
 ul {
@@ -221,15 +218,24 @@ li {
   padding: 0 20px;
 }
 
-.issue-container {
+.goals {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.goal-container {
   padding: 20px;
 }
 
-.issue-columns {
+.goal-title img {
+  width: 100%;
+}
+
+.goal-columns {
   display: flex;
 }
 
-.issue-info {
+.goal-info {
   white-space: pre-wrap;
 }
 
@@ -343,9 +349,9 @@ footer a {
 }
 
 /*Tablet View*/
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 1500px) {
   .flex-container {
-    width: 90%
+    width: 90%;
   }
 }
 
@@ -357,7 +363,7 @@ footer a {
     align-items: center;
   }
 
-  .hero{
+  .hero {
     z-index: 1;
     width: 100%;
     height: 300px;
@@ -369,7 +375,7 @@ footer a {
     font-size: 35px;
   }
 
-  .issue-columns {
+  .goal-columns {
     flex-direction: column;
   }
 

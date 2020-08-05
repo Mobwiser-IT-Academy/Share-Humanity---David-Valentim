@@ -14,7 +14,9 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
       }
     });
 
@@ -26,14 +28,31 @@ navSlide();
 
 //NAV ANIMATION END
 
-var issues = [
+var goal1Title = document.createElement("img");
+var goal2Title = document.createElement("img");
+var goal3Title = document.createElement("img");
+var goal4Title = document.createElement("img");
+var goal5Title = document.createElement("img");
+
+goal1Title.src = "./images-files/1-no-poverty.png";
+goal1Title.alt = "1 No Poverty";
+goal2Title.src = "./images-files/2-zero-hunger.png";
+goal2Title.alt = "2 Zero Hunger";
+goal3Title.src = "./images-files/3-good-health.png";
+goal3Title.alt = "3 Good Health and Well-Being";
+goal4Title.src = "./images-files/4-quality-education.png";
+goal4Title.alt = "4 Quality Education";
+goal5Title.src = "./images-files/5-gender-equality.png";
+goal5Title.alt = "5 Gender Equality";
+
+var goals = [
   {
-    title: "1. No Poverty",
+    title: goal1Title,
     info: `     More than 700 million people, or 10% of the world population, still live in extreme poverty and are struggling to fulfill the most basic needs like health, education, and access to water and sanitation, to name a few. The majority of people living on less than $1.90 a day live in sub-Saharan Africa. Worldwide, the poverty rate in rural areas is 17.2 per cent — more than three times higher than in urban areas.\n\n    Having a job does not guarantee a decent living. In fact, 8 per cent of employed workers and their families worldwide lived in extreme poverty in 2018. Poverty affects children disproportionately. One out of five children live in extreme poverty. Ensuring social protection for all children and other vulnerable groups is critical to reduce poverty.\n\n    Poverty has many dimensions, but its causes include unemployment, social exclusion, and high vulnerability of certain populations to disasters, diseases and other phenomena which prevent them from being productive. Growing inequality is detrimental to economic growth and undermines social cohesion, increasing political and social tensions and, in some circumstances, driving instability and conflicts.`,
   },
 
   {
-    title: "2. Zero Hunger",
+    title: goal2Title,
     info: `    It is time to rethink how we grow, share and consume our food. If done right, agriculture, forestry and fisheries can provide nutritious food for all and generate decent incomes, while supporting people-centered rural development and protecting the environment.
                             
     Right now, our soils, freshwater, oceans, forests and biodiversity are being rapidly degraded. Climate change is putting even more pressure on the resources we depend on, increasing risks associated with disasters, such as droughts and floods. Many rural women and men can no longer make ends meet on their land, forcing them to migrate to cities in search of opportunities. Poor food security is also causing millions of children to be stunted, or too short for the ages, due to severe malnutrition.
@@ -42,7 +61,7 @@ var issues = [
   },
 
   {
-    title: "3. Good Health and Well-Being",
+    title: goal3Title,
     info: `    Ensuring healthy lives and promoting the well-being at all ages is essential to sustainable development.
                             
     Significant strides have been made in increasing life expectancy and reducing some of the common killers associated with child and maternal mortality, but working towards achieving the target of less than 70 maternal deaths per 100,000 live births by 2030 would require improvements in skilled delivery care.
@@ -53,7 +72,7 @@ var issues = [
   },
 
   {
-    title: "4. Quality Education",
+    title: goal4Title,
     info: `    Obtaining a quality education is the foundation to creating sustainable development. In addition to improving quality of life, access to inclusive education can help equip locals with the tools required to develop innovative solutions to the world’s greatest problems.
                             
     Over 265 million children are currently out of school and 22% of them are of primary school age. Additionally, even the children who are attending schools are lacking basic skills in reading and math. In the past decade, major progress has been made towards increasing access to education at all levels and increasing enrollment rates in schools particularly for women and girls. Basic literacy skills have improved tremendously, yet bolder efforts are needed to make even greater strides for achieving universal education goals. For example, the world has achieved equality in primary education between girls and boys, but few countries have achieved that target at all levels of education.
@@ -62,7 +81,7 @@ var issues = [
   },
 
   {
-    title: "5. Gender Equality",
+    title: goal5Title,
     info: `    Gender equality is not only a fundamental human right, but a necessary foundation for a peaceful, prosperous and sustainable world. 
 
     There has been progress over the last decades: More girls are going to school, fewer girls are forced into early marriage, more women are serving in parliament and positions of leadership, and laws are being reformed to advance gender equality. 
@@ -77,41 +96,46 @@ var issues = [
   },
 ];
 
-var issueContainer = [
-  document.getElementById("issue-1"),
-  document.getElementById("issue-2"),
-  document.getElementById("issue-3"),
-  document.getElementById("issue-4"),
-  document.getElementById("issue-5"),
+var goalContainer = [
+  document.getElementById("goal-1"),
+  document.getElementById("goal-2"),
+  document.getElementById("goal-3"),
+  document.getElementById("goal-4"),
+  document.getElementById("goal-5"),
 ];
 
-var issueTitle = [
-  document.getElementById("first-issue"),
-  document.getElementById("second-issue"),
-  document.getElementById("third-issue"),
-  document.getElementById("fourth-issue"),
-  document.getElementById("fifth-issue"),
+var goalTitle = [
+  document.getElementById("first-goal"),
+  document.getElementById("second-goal"),
+  document.getElementById("third-goal"),
+  document.getElementById("fourth-goal"),
+  document.getElementById("fifth-goal"),
 ];
 
-issueTitle[0].textContent = issues[0].title;
-issueTitle[1].textContent = issues[1].title;
-issueTitle[2].textContent = issues[2].title;
-issueTitle[3].textContent = issues[3].title;
-issueTitle[4].textContent = issues[4].title;
+goalTitle[0].textContent = "";
+goalTitle[0].appendChild(goals[0].title);
+goalTitle[1].textContent = "";
+goalTitle[1].appendChild(goals[1].title);
+goalTitle[2].textContent = "";
+goalTitle[2].appendChild(goals[2].title);
+goalTitle[3].textContent = "";
+goalTitle[3].appendChild(goals[3].title);
+goalTitle[4].textContent = "";
+goalTitle[4].appendChild(goals[4].title);
 
-var issueInfo = [
-  document.getElementById("first-issue-info"),
-  document.getElementById("second-issue-info"),
-  document.getElementById("third-issue-info"),
-  document.getElementById("fourth-issue-info"),
-  document.getElementById("fifth-issue-info"),
+var goalInfo = [
+  document.getElementById("first-goal-info"),
+  document.getElementById("second-goal-info"),
+  document.getElementById("third-goal-info"),
+  document.getElementById("fourth-goal-info"),
+  document.getElementById("fifth-goal-info"),
 ];
 
-issueInfo[0].innerHTML = issues[0].info;
-issueInfo[1].innerHTML = issues[1].info;
-issueInfo[2].innerHTML = issues[2].info;
-issueInfo[3].innerHTML = issues[3].info;
-issueInfo[4].innerHTML = issues[4].info;
+goalInfo[0].innerHTML = goals[0].info;
+goalInfo[1].innerHTML = goals[1].info;
+goalInfo[2].innerHTML = goals[2].info;
+goalInfo[3].innerHTML = goals[3].info;
+goalInfo[4].innerHTML = goals[4].info;
 
 var affected = [
   document.getElementById("people-affected-1"),
@@ -131,19 +155,18 @@ affected[4].textContent = `785,000,000 +`;
 
 function filterFunction() {
   // Declare variables
-  var issuesArray = Object.values(issues);
-  var input, filter, txtValue;
+  var goalsArray = Object.values(goals);
+  var input, filter;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
 
   // Loop through all items, and hide those that don't match the search query
-  for (i = 0; i < issuesArray.length; i++) {
-    item = issueTitle[i];
-    txtValue = item.textContent || item.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      issueContainer[i].style.display = "";
+  for (i = 0; i < goalsArray.length; i++) {
+    item = goalsArray[i].title.alt;
+    if (item.toUpperCase().indexOf(filter) > -1) {
+      goalContainer[i].style.display = "";
     } else {
-      issueContainer[i].style.display = "none";
+      goalContainer[i].style.display = "none";
     }
   }
 }

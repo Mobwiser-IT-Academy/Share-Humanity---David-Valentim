@@ -11,25 +11,84 @@
     />
     <link rel="stylesheet" href="css/all.css" />
     <script src="main.js" defer></script>
-    
+
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="./images-files/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./images-files/favicon//apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./images-files/favicon//apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./images-files/favicon//apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./images-files/favicon//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./images-files/favicon//apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./images-files/favicon//apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./images-files/favicon//apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images-files/favicon//apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./images-files/favicon//android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images-files/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./images-files/favicon//favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images-files/favicon//favicon-16x16.png">
-    <link rel="manifest" href="./images-files/favicon//manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./images-files/favicon//ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./images-files/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./images-files/favicon//apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./images-files/favicon//apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./images-files/favicon//apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./images-files/favicon//apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./images-files/favicon//apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./images-files/favicon//apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./images-files/favicon//apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images-files/favicon//apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images-files/favicon//android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images-files/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images-files/favicon//favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images-files/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images-files/favicon//manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="./images-files/favicon//ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
@@ -45,10 +104,10 @@
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">Our Goals</a>
+            <a href="our-goals.html">Our Goals</a>
           </li>
           <li>
             <a href="#">Work</a>
@@ -66,7 +125,7 @@
     </header>
 
     <div class="flex-container">
-      <a href="index.html" id="title"><h1>Our Goals</h1></a>
+      <h1>Our Goals</h1>
 
       <input
         type="text"
@@ -75,16 +134,16 @@
         placeholder="Search..."
       />
 
-      <div class="issue-container" id="issue-1">
-        <h2 id="first-issue">First Issue</h2>
+      <div class="goal-container" id="goal-1">
+        <div id="first-goal" class="goal-title">First Goal</div>
         <div class="inline">
           <h3 class="inline">Number of people affected:</h3>
           <p id="people-affected-1" class="number-people-affected"></p>
         </div>
 
-        <div class="issue-columns">
+        <div class="goal-columns">
           <div class="column1">
-            <p class="issue-info" id="first-issue-info"></p>
+            <p class="goal-info" id="first-goal-info"></p>
           </div>
           <div class="column2">
             <p class="areas">
@@ -118,13 +177,13 @@
         <hr />
       </div>
 
-      <div class="issue-container" id="issue-2">
-        <h2 id="second-issue">Second Issue</h2>
+      <div class="goal-container" id="goal-2">
+        <div id="second-goal" class="goal-title">Second goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-2" class="number-people-affected"></p>
-        <div class="issue-columns">
+        <div class="goal-columns">
           <div class="column1">
-            <p class="issue-info" id="second-issue-info"></p>
+            <p class="goal-info" id="second-goal-info"></p>
           </div>
 
           <div class="column2">
@@ -159,13 +218,13 @@
         <hr />
       </div>
 
-      <div class="issue-container" id="issue-3">
-        <h2 id="third-issue">Third Issue</h2>
+      <div class="goal-container" id="goal-3">
+        <div id="third-goal" class="goal-title">Third goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-3" class="number-people-affected"></p>
-        <div class="issue-columns">
+        <div class="goal-columns">
           <div class="column1">
-            <p class="issue-info" id="third-issue-info"></p>
+            <p class="goal-info" id="third-goal-info"></p>
           </div>
 
           <div class="column2">
@@ -203,13 +262,13 @@
         <hr />
       </div>
 
-      <div class="issue-container" id="issue-4">
-        <h2 id="fourth-issue">Fourth Issue</h2>
+      <div class="goal-container" id="goal-4">
+        <div id="fourth-goal" class="goal-title">Fourth goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-4" class="number-people-affected"></p>
-        <div class="issue-columns">
+        <div class="goal-columns">
           <div class="column1">
-            <p class="issue-info" id="fourth-issue-info"></p>
+            <p class="goal-info" id="fourth-goal-info"></p>
           </div>
 
           <div class="column2">
@@ -244,13 +303,13 @@
         <hr />
       </div>
 
-      <div class="issue-container" id="issue-5">
-        <h2 id="fifth-issue">Fifth Issue</h2>
+      <div class="goal-container" id="goal-5">
+        <div id="fifth-goal" class="goal-title">Fifth goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-5" class="number-people-affected"></p>
-        <div class="issue-columns">
+        <div class="goal-columns">
           <div class="column1">
-            <p class="issue-info" id="fifth-issue-info"></p>
+            <p class="goal-info" id="fifth-goal-info"></p>
           </div>
 
           <div class="column2">
@@ -258,25 +317,25 @@
               <p>
                 <b>Areas most affected:</b>
                 <br />
-                <a href="images-files/worldmap-water.jpg"
+                <a href="images-files/worldmap-gender.jpg"
                   ><img
-                    src="images-files/worldmap-water.jpg"
+                    src="images-files/worldmap-gender.jpg"
                     alt="World Map Share of Population with access to improved drinking water, 2015"
                 /></a>
               </p>
             </div>
             <div class="images-container">
-              <a href="images-files/water-pdf-1.pdf" target="_blank"
+              <a href="images-files/gender-pdf-1.pdf" target="_blank"
                 ><img
-                  src="images-files/water-img-1.png"
+                  src="images-files/gender-img-1.png"
                   alt=""
                   width="400"
                   height="250"
               /></a>
 
-              <a href="images-files/water-pdf-2.pdf" target="_blank"
+              <a href="images-files/gender-pdf-2.pdf" target="_blank"
                 ><img
-                  src="images-files/water-img-2.png"
+                  src="images-files/gender-img-2.png"
                   alt=""
                   width="400"
                   height="250"
@@ -300,7 +359,9 @@
 
     <footer>
       Sources:
-      <a href="https://www.un.org/sustainabledevelopment/">https://www.un.org/sustainabledevelopment/</a>
+      <a href="https://www.un.org/sustainabledevelopment/"
+        >https://www.un.org/sustainabledevelopment/</a
+      >
       <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
     </footer>
 
