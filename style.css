@@ -10,6 +10,7 @@
   justify-content: space-around;
   align-items: center;
   margin: 10px auto;
+  text-align: center;
 }
 
 /*header*/
@@ -35,6 +36,7 @@ header {
   justify-content: space-around;
   width: 50%;
   text-align: center;
+  align-items: center;
 }
 
 .nav-links li {
@@ -70,6 +72,13 @@ header {
     overflow-x: hidden;
   }
 
+  .logo img {
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100px;
+  }
+
   .centered {
     display: flex;
     justify-content: space-between;
@@ -81,7 +90,7 @@ header {
 
   .nav-links {
     position: absolute;
-    z-index: 2;
+    z-index: 99;
     right: 0px;
     top: 100px;
     height: 89vh;
@@ -132,24 +141,14 @@ header {
 
 /*header-end*/
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(245, 245, 245),
-    rgb(238, 255, 236)
-  );
-  background-repeat: no-repeat;
-  background-color: rgb(238, 255, 236);
+  background-color:rgb(245, 245, 245);
 }
 
 .flex-container {
   transition: ease-in;
   background-color: white;
-  margin: 3px auto;
+  margin: 10px auto;
   width: 60%;
   box-shadow: 3px 3px rgb(248, 248, 248);
   border-radius: 5px;
@@ -165,10 +164,22 @@ body {
   background-image: url("./images-files/hero-image.jpg");
   background-size: cover;
   background-position-y: center;
-  opacity: 0.8;
+  opacity: 0.7;
   border-radius: 5px;
   position: relative;
 }
+
+.hero-text{
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(243, 243, 243);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  transition: color ease-in 1s;
+}
+
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -185,15 +196,7 @@ h2 {
   text-align: left;
   font-family: "Poppins", sans-serif;
   margin: 0;
-  padding: 10px 0;
-}
-
-h3 {
-  margin: 0;
-  padding: 0;
-  font-family: "Varela Round", sans-serif;
-  font-size: 1em;
-  display: inline-block;
+  padding: 20px 0;
 }
 
 a {
@@ -218,6 +221,16 @@ li {
   padding: 0 20px;
 }
 
+.volunteer-text{
+  padding: 20px;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.flex-container .columns .column1{
+  text-align: center;
+}
+
 .goals {
   text-align: center;
   padding-bottom: 10px;
@@ -231,23 +244,36 @@ li {
   width: 100%;
 }
 
-.goal-columns {
+.goal-cards:hover{
+  opacity: 0.5;
+}
+
+.columns {
   display: flex;
 }
 
 .goal-info {
-  white-space: pre-wrap;
+  text-align: justify;
 }
 
 .column1 {
   flex: 1;
   text-align: justify;
+  padding: 0 3%;
 }
 
 .column2 {
   flex: 1;
-  text-align: justify;
+  text-align: center;
   padding: 0 3%;
+}
+
+.column1 img{
+  opacity: 0.8;
+}
+
+.column2 img{
+  opacity: 0.8;
 }
 
 p {
@@ -291,6 +317,7 @@ hr {
   display: flex;
   flex-direction: column;
   text-align: center;
+
 }
 
 .images-container img {
@@ -364,15 +391,23 @@ footer a {
   }
 
   .hero {
-    z-index: 1;
     width: 100%;
     height: 300px;
     background-position: center;
   }
 
+  .hero-text{
+    font-size: 1.5em;
+    left: 20px;
+  }
+
   h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 3em;
+  }
+
+  .columns {
+    flex-direction: column;
   }
 
   .goal-columns {
@@ -380,10 +415,15 @@ footer a {
   }
 
   .column2 {
-    display: flex;
     align-items: center;
+
   }
   #myInput {
-    width: 90px;
+    width: 100px;
   }
+
+  .col-reverse{
+    flex-direction: column-reverse;
+  }
+
 }

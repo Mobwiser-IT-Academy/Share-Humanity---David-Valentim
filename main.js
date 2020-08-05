@@ -28,6 +28,14 @@ navSlide();
 
 //NAV ANIMATION END
 
+//LAZYLOAD
+
+var lazyLoadInstance = new LazyLoad({
+  // Your custom settings go here
+});
+
+//LAZYLOAD END
+
 var goal1Title = document.createElement("img");
 var goal2Title = document.createElement("img");
 var goal3Title = document.createElement("img");

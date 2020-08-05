@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="css/all.css" />
     <script src="main.js" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
     <!--Favicon-->
     <link
       rel="apple-touch-icon"
@@ -110,10 +110,18 @@
             <a href="our-goals.html">Our Goals</a>
           </li>
           <li>
-            <a href="#">Work</a>
+            <a
+              href="http://www.sharinghumanity.org/volunteer.php"
+              target="_blank"
+              >Volunteer</a
+            >
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a
+              href="http://www.sharinghumanity.org/projects.php"
+              target="_blank"
+              >Projects</a
+            >
           </li>
         </ul>
         <div class="burger">
@@ -136,20 +144,24 @@
 
       <div class="goal-container" id="goal-1">
         <div id="first-goal" class="goal-title">First Goal</div>
-        <div class="inline">
-          <h3 class="inline">Number of people affected:</h3>
+        <div>
+          <h3>Number of people affected:</h3>
           <p id="people-affected-1" class="number-people-affected"></p>
         </div>
 
-        <div class="goal-columns">
+        <div class="columns">
           <div class="column1">
             <p class="goal-info" id="first-goal-info"></p>
           </div>
           <div class="column2">
-
             <div class="images-container">
               <a href="images-files/poverty-pdf-1.pdf" target="_blank"
-                ><img src="images-files/poverty-img-1.png" alt="" width="400" height="250"/></a>
+                ><img
+                  src="images-files/poverty-img-1.png"
+                  alt=""
+                  width="400"
+                  height="250"
+              /></a>
               <a href="images-files/poverty-pdf-2.pdf" target="_blank"
                 ><img
                   src="images-files/poverty-img-2.png"
@@ -157,14 +169,15 @@
                   width="400"
                   height="250"
               /></a>
-
             </div>
           </div>
+        </div>
 
-        </div>
-        <div>
-          <iframe src="https://ourworldindata.org/grapher/share-of-the-population-living-in-extreme-poverty" style="width: 100%; height: 600px; border: 0px none;"></iframe>
-        </div>
+        <iframe
+          src="https://ourworldindata.org/grapher/share-of-the-population-living-in-extreme-poverty"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+        ></iframe>
       </div>
 
       <hr />
@@ -173,7 +186,7 @@
         <div id="second-goal" class="goal-title">Second goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-2" class="number-people-affected"></p>
-        <div class="goal-columns">
+        <div class="columns">
           <div class="column1">
             <p class="goal-info" id="second-goal-info"></p>
           </div>
@@ -198,7 +211,11 @@
             </div>
           </div>
         </div>
-        <iframe src="https://ourworldindata.org/grapher/prevalence-of-undernourishment" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        <iframe
+          src="https://ourworldindata.org/grapher/prevalence-of-undernourishment"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+        ></iframe>
       </div>
 
       <hr />
@@ -207,7 +224,7 @@
         <div id="third-goal" class="goal-title">Third goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-3" class="number-people-affected"></p>
-        <div class="goal-columns">
+        <div class="columns">
           <div class="column1">
             <p class="goal-info" id="third-goal-info"></p>
           </div>
@@ -232,7 +249,11 @@
             </div>
           </div>
         </div>
-        <iframe src="https://ourworldindata.org/grapher/child-mortality-igme" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        <iframe
+          src="https://ourworldindata.org/grapher/child-mortality-igme"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+        ></iframe>
       </div>
 
       <hr />
@@ -241,7 +262,7 @@
         <div id="fourth-goal" class="goal-title">Fourth goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-4" class="number-people-affected"></p>
-        <div class="goal-columns">
+        <div class="columns">
           <div class="column1">
             <p class="goal-info" id="fourth-goal-info"></p>
           </div>
@@ -266,7 +287,11 @@
             </div>
           </div>
         </div>
-        <iframe src="https://ourworldindata.org/grapher/literacy-rate-by-country" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        <iframe
+          src="https://ourworldindata.org/grapher/literacy-rate-by-country"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+        ></iframe>
       </div>
 
       <hr />
@@ -275,7 +300,7 @@
         <div id="fifth-goal" class="goal-title">Fifth goal</div>
         <h3>Number of people affected:</h3>
         <p id="people-affected-5" class="number-people-affected"></p>
-        <div class="goal-columns">
+        <div class="columns">
           <div class="column1">
             <p class="goal-info" id="fifth-goal-info"></p>
           </div>
@@ -300,7 +325,11 @@
             </div>
           </div>
         </div>
-        <iframe src="https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+        <iframe
+          src="https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report"
+          loading="lazy"
+          style="width: 100%; height: 600px; border: 0px none;"
+        ></iframe>
       </div>
 
       <div id="backToTopContainer">
@@ -321,6 +350,7 @@
         >https://www.un.org/sustainabledevelopment/</a
       >
       <a href="https://ourworldindata.org/">https://ourworldindata.org/</a>
+      <a href="http://www.sharinghumanity.org/">http://www.sharinghumanity.org/</a>
     </footer>
 
     <script src="main.js"></script>
