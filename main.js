@@ -42,15 +42,15 @@ var goal3Title = document.createElement("img");
 var goal4Title = document.createElement("img");
 var goal5Title = document.createElement("img");
 
-goal1Title.src = "./images-files/1-no-poverty.png";
+goal1Title.src = "./assets/1-no-poverty.png";
 goal1Title.alt = "1 No Poverty";
-goal2Title.src = "./images-files/2-zero-hunger.png";
+goal2Title.src = "./assets/2-zero-hunger.png";
 goal2Title.alt = "2 Zero Hunger";
-goal3Title.src = "./images-files/3-good-health.png";
+goal3Title.src = "./assets/3-good-health.png";
 goal3Title.alt = "3 Good Health and Well-Being";
-goal4Title.src = "./images-files/4-quality-education.png";
+goal4Title.src = "./assets/4-quality-education.png";
 goal4Title.alt = "4 Quality Education";
-goal5Title.src = "./images-files/5-gender-equality.png";
+goal5Title.src = "./assets/5-gender-equality.png";
 goal5Title.alt = "5 Gender Equality";
 
 var goals = [
