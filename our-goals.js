@@ -1,40 +1,4 @@
-//MOBILE NAV ANIMATION
 
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
-  const body = document.querySelector("body");
-
-  burger.addEventListener("click", () => {
-    //Toggle Nav
-    nav.classList.toggle("nav-active");
-
-    //Animate Links
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.5
-        }s`;
-      }
-    });
-
-    burger.classList.toggle("toggle");
-    if(body.style.overflowY == "hidden"){
-      body.style.overflowY = "auto";
-    }
-    else{
-      body.style.overflowY = "hidden";
-    }
-  });
-};
-
-navSlide();
-
-<<<<<<< HEAD
-//DATA GENERATION OUR-GOALS.HTML
 var goal1Title = document.createElement("img");
 var goal2Title = document.createElement("img");
 var goal3Title = document.createElement("img");
@@ -119,10 +83,16 @@ var goalTitle = [
   document.getElementById("fifth-goal"),
 ];
 
-for (i = 0; i < goals.length; i++) {
-  goalTitle[i].textContent = "";
-  goalTitle[i].appendChild(goals[i].title);
-}
+goalTitle[0].textContent = "";
+goalTitle[0].appendChild(goals[0].title);
+goalTitle[1].textContent = "";
+goalTitle[1].appendChild(goals[1].title);
+goalTitle[2].textContent = "";
+goalTitle[2].appendChild(goals[2].title);
+goalTitle[3].textContent = "";
+goalTitle[3].appendChild(goals[3].title);
+goalTitle[4].textContent = "";
+goalTitle[4].appendChild(goals[4].title);
 
 var goalInfo = [
   document.getElementById("first-goal-info"),
@@ -132,9 +102,11 @@ var goalInfo = [
   document.getElementById("fifth-goal-info"),
 ];
 
-for (i = 0; i < goalInfo.length; i++) {
-  goalInfo[i].innerHTML = goals[i].info;
-}
+goalInfo[0].innerHTML = goals[0].info;
+goalInfo[1].innerHTML = goals[1].info;
+goalInfo[2].innerHTML = goals[2].info;
+goalInfo[3].innerHTML = goals[3].info;
+goalInfo[4].innerHTML = goals[4].info;
 
 var affected = [
   document.getElementById("people-affected-1"),
@@ -150,7 +122,7 @@ affected[2].textContent = `5,000,000 +`;
 affected[3].textContent = `265,000,000 +`;
 affected[4].textContent = `785,000,000 +`;
 
-//FILTER OUR-GOALS.HTML
+//Filter
 
 function filterFunction() {
   // Declare variables
@@ -169,19 +141,3 @@ function filterFunction() {
     }
   }
 }
-
-var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 30,
-  effect: "fade",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-=======
-//NAV ANIMATION END
->>>>>>> redesign
