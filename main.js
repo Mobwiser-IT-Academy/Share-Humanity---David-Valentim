@@ -33,7 +33,6 @@ const navSlide = () => {
 
 navSlide();
 
-<<<<<<< HEAD
 //DATA GENERATION OUR-GOALS.HTML
 var goal1Title = document.createElement("img");
 var goal2Title = document.createElement("img");
@@ -169,19 +168,3 @@ function filterFunction() {
     }
   }
 }
-
-var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 30,
-  effect: "fade",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-=======
-//NAV ANIMATION END
->>>>>>> redesign
