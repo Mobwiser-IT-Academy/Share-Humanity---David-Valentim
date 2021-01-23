@@ -168,11 +168,7 @@ body {
   position: relative;
 }
 
-<<<<<<< HEAD
-#hero-text {
-=======
 .hero-text {
->>>>>>> redesign
   font-size: 2em;
   font-weight: bold;
   color: rgb(243, 243, 243);
